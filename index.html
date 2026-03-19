@@ -475,10 +475,41 @@
         document.getElementById('subpage').classList.add('visible');
         if (type === 'discord') {
             document.getElementById('subTitle').textContent = 'Python Bot Code';
+            document.getElementById('subCards').innerHTML = `
+                <div class="file-card">
+                    <div class="file-icon">🎫</div>
+                    <div>
+                        <div class="file-name">Ticket System</div>
+                        <div class="file-sub">Hi, you need a ticket system for your Discord server? If you need it, write me in dm on discord.</div>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-icon">✅</div>
+                    <div>
+                        <div class="file-name">Verify System</div>
+                        <div class="file-sub">Hi, you need a verify system for your Discord server? If you need it, write me in dm on discord.</div>
+                    </div>
+                </div>
+                <div class="file-card">
+                    <div class="file-icon">👋</div>
+                    <div>
+                        <div class="file-name">Welcome System</div>
+                        <div class="file-sub">Hi, you need a welcome system for your Discord server? If you need it, write me in dm on discord.</div>
+                    </div>
+                </div>
+            `;
         } else {
             document.getElementById('subTitle').textContent = 'Minecraft Plugins';
+            document.getElementById('subCards').innerHTML = `
+                <div class="file-card">
+                    <div class="file-icon">🔌</div>
+                    <div>
+                        <div class="file-name">Minecraft Bungeecord HUB Plugin</div>
+                        <div class="file-sub">Hi, you need a plugin that adds the /hub command to your servers that takes you to the hub server. If you need it, write me in dm on discord.</div>
+                    </div>
+                </div>
+            `;
         }
-        document.getElementById('subCards').innerHTML = '<div style="color:#660022;font-size:13px;letter-spacing:2px;padding:40px 0;text-align:center;">COMING SOON...</div>';
     }
 
     function openFile(name) {
